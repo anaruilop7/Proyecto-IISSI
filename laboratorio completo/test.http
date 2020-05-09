@@ -1,0 +1,45 @@
+@users=http://localhost:3000/users
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFuYUBtYWlsLmNvbSIsImlhdCI6MTU4ODc1NzcwMywiZXhwIjoxNTg4NzYxMzAzLCJzdWIiOiIyIn0.HtlmJM0DqGgTn96lgfz-HvCdbyYpbPLkkb3Z_WS5Ksc
+
+GET {{users}}
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "email": "ana@mail.com",
+    "password": "ana1234",
+    "name": "Ana",
+    "surname": "Ruiz López",
+    "phone": "999888777",
+    "user": "Ana"
+      }
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "ana2@mail.com",
+    "password": "ana1234"
+      }
+
+###
+POST http://localhost:3000/photos
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+ {
+    "url": "https://images.unsplash.com/photo-1559628129-67cf63b72248?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+    "title": "Gallo al natural",
+    "description": "Una foto simple de un gallo con el fondo medio desenfocado",
+    "date": "2012-04-23T18:25:43.511Z",
+    "upvotes": 312,
+    "downvotes": 77,
+    "tags": [
+      "naturaleza",
+      "gallo",
+      "animales"
+    ],
+    "userId": 1
+  }
