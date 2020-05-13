@@ -19,7 +19,11 @@ function processPhotos(data,mapa) {
         <div class="card-body">
           <h5 class="card-title">${photo.title}</h5>
           <p class="card-text">${photo.description}</p>
-          <a href="perfil.php?id=${usuario}"> ${username}</a>
+          <hr>
+          <p class="card-text">${photo.upvotes} likes </p>
+
+          <a href="perfil.php?id=${photo.id}"> ${username}</a>
+
           <hr>
           <p class="card-text">
             
@@ -74,7 +78,7 @@ function loadPhotos(mapa) {
 console.log("Cargando fotos...");
 
 $.ajax({
-    url: "http://localhost:3000/photos?_sort=date&_order=desc&_limit=8",
+    url: "http://localhost:3000/photos?_sort=upvotes&_order=desc&_limit=4",
     success: function (data){
       $(processPhotos(data,mapa));
     },

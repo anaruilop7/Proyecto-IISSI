@@ -6,6 +6,23 @@ function editPhoto() {
 	window.location.href = "photo_edit.php?id=" + id;
 }
 
+
+
+function votePhoto() {
+    let likes = parseInt(data.upvotes) + 1;
+	let score = likes - data.downvotes;
+	let score_text = "Puntuación: " + score;
+	$("#image-score").text(score_text);
+
+	/*
+	let usuario = data.userId;
+
+	let nombre =  "http://localhost:3000/photos/" + usuario;
+
+	let nombre2 = nombre.user;
+*/
+
+}
 function deletePhoto() {
 	fetch('http://localhost:3000/photos/' + id, {
 		method: "DELETE",
@@ -27,7 +44,7 @@ function processPhotoLoad(data) {
 	$("#image").attr("src", data.url);
 	$("#image-title").text(data.title);
 	$("#image-desc").text(data.description);
-
+	
 	let photo_date = data.date;
 	let date = new Date(photo_date);
 
@@ -42,7 +59,7 @@ function processPhotoLoad(data) {
 	for(tag of data.tags) {
 		let span = $("<span></span>", {
 			text: tag,
-			"class": "badge badge-primary"
+			"class": "badge badge-secondary"
 		});
 
 		$("#image-tags").append(span);
@@ -52,6 +69,15 @@ function processPhotoLoad(data) {
 	let score = data.upvotes - data.downvotes;
 	let score_text = "Puntuación: " + score;
 	$("#image-score").text(score_text);
+
+	/*
+	let usuario = data.userId;
+
+	let nombre =  "http://localhost:3000/photos/" + usuario;
+
+	let nombre2 = nombre.user;
+*/
+
 }
 
 function loadPhoto() {

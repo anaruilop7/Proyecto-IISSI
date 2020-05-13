@@ -12,11 +12,8 @@
 
   <div class="container">
       <div class="col-md text-center">
-        <h3>My profile</h3>
-      
-      
-        <h2 id="usuario"></h2>
-          <h5 id="nombre"></h5>
+        <h3 id="usuario"> 's profile </h3>
+    
           <h5 id="apellidos"></h5>
 
         <hr>
@@ -54,7 +51,8 @@
   
 
   <?php include 'footer.php' ?>
+  <script src="js/perfil.js"></script>
+
 </body>
 
 </html>
-<script src="js/user.js"></script>

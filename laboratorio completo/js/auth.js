@@ -1,3 +1,5 @@
+
+
 function saveToken(token) {
 
     return new Promise((resolve, reject) => {
@@ -10,8 +12,12 @@ function saveToken(token) {
         $.ajax({
             url: "http://localhost:3000/users/" + userId,
             success: function(data) {
+                let user = data.user;
+                let surname = data.surname;
                 let name = data.name;
                 localStorage.setItem("userName", name);
+                localStorage.setItem("usuario", user);
+                localStorage.setItem("apellido", surname);
                 resolve();
             },
             error: reject,

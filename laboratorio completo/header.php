@@ -57,7 +57,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="usuarios_trending.php">Trending users</a>
-            <a class="dropdown-item" href="trending-photos.php">Trending photos</a>
+            <a class="dropdown-item" href="trending_photos.php">Trending photos</a>
             <a class="dropdown-item" href="tags_trending.php">Trending tags</a>
           </div> 
         </li>
