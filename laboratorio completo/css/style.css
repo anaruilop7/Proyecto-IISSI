@@ -339,4 +339,11 @@ div.gallery-container {
     }
 }
 
+.card-img-top {
+    object-fit: contain;
+}
+
+.card{
+    border:none;
+}
 

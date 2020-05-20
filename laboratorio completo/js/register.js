@@ -32,6 +32,14 @@ function validateForm() {
         errorCounter++;
     }
 
+
+    if (password1.length<4) {
+        $("#errors-container").append(getError("La contraseña es demasiado corta")
+        );
+        errorCounter++;
+    }
+
+
     if (password1 != password2) {
         $("#errors-container").append(
             getError("Las contraseñas deben ser iguales")

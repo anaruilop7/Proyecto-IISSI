@@ -3,7 +3,7 @@
   <h3 id="subtitle">it's just a click away!</h3>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="newpic.php"><i class="fa fa-camera-retro" aria-hidden="true"></i>
+    <a class="navbar-brand" id="newpic" href="newpic.php"><i class="fa fa-camera-retro" aria-hidden="true"></i>
   
 </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,41 +15,14 @@
           <a class="nav-link" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="register.php">Sign up </a>
+          <a class="nav-link" id="register" href="register.php">Sign up </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="usuario.php">Profile</a>
+          <a class="nav-link" id="Profile" href="usuario.php">Profile</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="login.php">Login</a>
-        <!--
-          <ul class="nav navbar-nav navbar-right ml-auto">			
-				  <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Login</a>
-				  <ul class="dropdown-menu form-wrapper">					
-					<li>
-						<form action="/examples/actions/confirmation.php" method="post">
-							<p class="hint-text">Sign in with your social media account</p>
-							<div class="form-group social-btn clearfix">
-								<a href=https://es-es.facebook.com/ class="btn btn-primary pull-left"><i class="fa fa-facebook"></i> Facebook</a>
-								<a href="https://twitter.com/home" class="btn btn-info pull-right"><i class="fa fa-twitter"></i> Twitter</a>
-							</div>
-							<div class="or-seperator"><b>or</b></div>
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Username" required="required">
-							</div>
-							<div class="form-group">
-								<input type="password" class="form-control" placeholder="Password" required="required">
-							</div>
-							<input type="submit" class="btn btn-primary btn-block" value="Login">
-							<div class="form-footer">
-								<a href="#">Forgot Your password?</a>
-
-							</div>
-						</form>
-					</li>
-				</ul>
-        -->
-	
+          <a class="nav-link" id="login" href="login.php">Login</a>
+        
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDesplegableId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -63,7 +36,7 @@
         </li>
         <li>
         <li class="nav-item">
-                    <a class="nav-link" onclick="logout()" href="index.php">Logout</a>
+                    <a class="nav-link" id="logout" onclick="logout()" href="index.php">Logout</a>
                 </li>
 
          <li class="espacio">
@@ -241,7 +214,20 @@
 let username = isLogged() ? "Welcome back, " + localStorage.getItem("userName") : "Please, log in";
 $("#showUsername").text(username);
 
+if(getToken()==null){
+    $("#logout").remove();
+    $("#Profile").remove();
+    $("#newpic").remove();
+    $("#navbarDesplegableId").remove();
+}
+else{
+    $("#register").remove();
+    $("login").remove();
+}
 </script>
 
 
+
 <script src="js/login.js"></script>
+
+

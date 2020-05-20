@@ -65,3 +65,54 @@ $("#photo-form").submit(function (event) {
         }
     }).catch(console.log);
 });
+
+    function rLenguaje(palabrotas){
+        let url = $("#url-input").val();
+        let title = $("#title-input").val();
+        let description = $("#description-input").val();
+        let tags = $("tags-input").val().split(",").map(tag => tag.trim());
+        let date = new Date().toString();
+        let cont = 0;
+        let palabrota = palabrotas[0].words;
+        for(p of palabrota){
+            if(title.includes(palabra)||description.includes(palabra)){
+                $("#errors-container").append(
+                    getError("Los apellidos deben tener al menos 6 caracteres de longitud")
+                );
+            }
+        }
+    }
+
+
+    
+function buscaPalabras() {
+
+    $.ajax({
+        url: "http://localhost:3000/palabrotas",
+        success: function (data){
+          let mapa=new Map;
+          for(palabra of palabrotas){
+            mapa.set(palabra.val);
+          }
+          $(rLenguaje(mapa));
+        },
+        error: function (error) {
+            console.log("Ha ocurrido un error: " + error.toString());
+        }
+    });
+  
+  }
+    
+function getError(message) {
+    return (
+        "<div onclick='removeError(this);' class='alert alert-danger' role='alert'><strong><i class='fa fa-times' aria-hidden= 'true'></i > Error! </strong>" +
+        message +
+        "</div>"
+    );
+}
+
+
+function removeError(error) {
+    $(error).remove();
+}
+

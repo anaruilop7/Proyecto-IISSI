@@ -124,31 +124,54 @@
       "userId": 1
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Tour_eiffel_at_sunrise_from_the_trocadero.jpg/1200px-Tour_eiffel_at_sunrise_from_the_trocadero.jpg",
-      "title": "Torre Eiffel",
-      "description": "Una bonita torre de París",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Plaza_de_Espa%C3%B1a_%28Sevilla%29_-_01.jpg",
+      "title": "Sevilla",
+      "description": "Plaza de España",
       "tags": [
-        "francia",
-        ""
+        "sevilla"
       ],
-      "date": "2020-05-12T14:03:19.879Z",
+      "date": "2020-05-19T10:09:21.974Z",
       "upvotes": 0,
       "downvotes": 0,
       "userId": "2",
       "id": 8
     },
     {
-      "url": "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/74/aa/fc.jpg",
-      "title": "Torre 2",
-      "description": "Otro ángulo de la torre",
+      "url": "https://i0.wp.com/urbanexplorers.es/wp-content/uploads/2018/11/henrique-ferreira-436512-unsplash-1.jpg?fit=822%2C548&ssl=1",
+      "title": "Sevilla",
+      "description": "Sevilla",
       "tags": [
-        "francia"
+        "sevilla"
       ],
-      "date": "2020-05-12T14:28:33.443Z",
+      "date": "2020-05-19T10:29:19.087Z",
       "upvotes": 0,
       "downvotes": 0,
       "userId": "2",
-      "id": 10
+      "id": 12
+    },
+    {
+      "url": "https://img5.yna.co.kr/etc/inner/SP/2018/11/15/ASP20181115001500883_05_i_P2.jpg",
+      "title": "Música",
+      "description": "Fotos tomadas en un concierto",
+      "tags": [
+        ""
+      ],
+      "date": "2020-05-20T06:52:07.312Z",
+      "upvotes": 0,
+      "downvotes": 0,
+      "userId": "2",
+      "id": 13
     }
-  ]
+  ],
+  "palabrotas": {
+    "tonto": true,
+    "feo": true,
+    "asco": true,
+    "fea": true,
+    "malo": true,
+    "estúpido": true,
+    "idiota": true,
+    "carapepino": true,
+    "cabezón": true
+  }
 }

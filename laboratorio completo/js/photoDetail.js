@@ -31,7 +31,7 @@ function deletePhoto() {
 		}
 	}).then(function(response) {
 		if(response.ok) {
-			window.location.href = "index.php";
+			window.location.href = "usuario.php";
 		} else {
 			console.log("Error al borrar la foto: " + response.statusText);
 		}

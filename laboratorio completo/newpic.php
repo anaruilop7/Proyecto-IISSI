@@ -27,7 +27,7 @@
                 <div class="col-md">
                     <div class="form-group">
                         <label for="url-input">URL:</label>
-                        <input type="text" class="form-control" id="url-input" name="url" placeholder="URL">
+                        <input type="text" class="form-control" id="url-input" name="url" placeholder="URL" required>
                     </div>
                 </div>
                 <div class="col-md">

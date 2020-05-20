@@ -11,47 +11,41 @@
   <?php include 'header.php' ?>
 
   <div class="container">
-      <div class="col-md text-center">
-        <h3>My profile</h3>
-      
-      
-        <h2 id="usuario"></h2>
-          <h5 id="nombre"></h5>
-          <h5 id="apellidos"></h5>
 
-        <hr>
-        
-        </div>
-
-
-      </div>
-    </div>
-
-    <hr>
-
-      <div class="col-md">
-
-      <div class = "my-photos">
-        
-         
-
-
-        </div>
-      
-      </div>
-      <div class="column">
-      
-      </div>
-    </div>
     <div class="row">
       <div class="col-md text-center">
-        <a href="index.php" class="btn btn-light">Go back</a>
+        <h3 id="username"> </h3>
+        <h3> My profile</h3>
+
+        <h2 id="usuario"></h2>
+        <h5 id="nombre"></h5>
+        <h5 id="apellidos"></h5>
+        <hr>
+
+
       </div>
     </div>
+
+    <div class="row">
+
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="column">
+
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-md text-center">
+      <a href="index.php" class="btn btn-light">Go back</a>
+    </div>
+  </div>
 
   </div>
 
-  
+
 
   <?php include 'footer.php' ?>
 </body>
