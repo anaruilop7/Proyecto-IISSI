@@ -16,11 +16,12 @@ function processProfile(dataPhotos) {
 
 
     for (photo of dataPhotos) {
+        if(photo.visibilidad == "public"){
         console.log(photo)
 
         let html = `<div class="col-md text-center">
             <div class="photo-image">
-              <a href="photo_detail_user.php?photoId=${photo.id}">
+              <a href="photo_detail.php?photoId=${photo.id}">
                 <img src="${photo.url}" class="photo-image">
               </a>
               </p>
@@ -35,6 +36,7 @@ function processProfile(dataPhotos) {
             $("div.container").append(new_row);
             row = new_row;
         }
+    }
 
     }
 }

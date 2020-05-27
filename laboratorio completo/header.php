@@ -24,6 +24,11 @@
           <a class="nav-link" id="login" href="login.php">Login</a>
         
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" id="tags" href="tags.php">Tags</a>
+        
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDesplegableId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Trending
@@ -211,6 +216,7 @@
 
 
 <script>
+  
 let username = isLogged() ? "Welcome back, " + localStorage.getItem("userName") : "Please, log in";
 $("#showUsername").text(username);
 
@@ -221,8 +227,9 @@ if(getToken()==null){
     $("#navbarDesplegableId").remove();
 }
 else{
+  $("#login").remove();
+
     $("#register").remove();
-    $("login").remove();
 }
 </script>
 

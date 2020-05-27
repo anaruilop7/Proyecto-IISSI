@@ -6,6 +6,13 @@ function processPhotos(data, mapa) {
   //console.log(mapa);
   for (photo of data) {
     let usuario = photo.userId;
+    let fecha = new Date(photo.date);
+    let ahora = new Date();
+
+    let resta = ahora.getTime() - fecha.getTime()
+    
+    if(resta/ (1000*60*60*24)<=7){
+      if(photo.visibilidad == "public"){
     let username = mapa.get(parseInt(usuario));
     let html = `<div class="col-md text-center">
       <div class="card">
@@ -46,7 +53,8 @@ function processPhotos(data, mapa) {
       $("div.container").append(new_row);
       row = new_row;
     }
-
+  }
+  }
 
   }
 }

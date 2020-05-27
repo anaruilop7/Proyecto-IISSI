@@ -28,8 +28,12 @@
                 <h2 id="image-title"></h2>
                 <h5 id="image-date"></h5>
                 <span id="image-desc"></span>
+                <hr>
+                <h5>This photo is </h5>
+                <h5 id="visib"></span>
+                    <span id="comentario"></span>
 
-            <!--
+                    <!--
                 <hr>
 
                 <h3 id="image-score"></h3>
@@ -37,31 +41,40 @@
                 <button type="button" class="btn btn-light">Dislike</button>
 
             -->
-                <hr>
+                    <hr>
 
-                <h3>Tags:</h3>
-                <div id="image-tags">
+                    <h3>Tags:</h3>
+                    <div id="image-tags">
 
-                </div>
-                <hr>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md text-center">
 
-                <button onclick='editPhoto()' type="button" class="btn btn-outline-warning">Edit</button>
-                <button onclick="deletePhoto()" type="button" class="btn btn-outline-secondary">Delete</button>
+                        </div>
+                    </div>
+
+                    <button onclick='editPhoto()' type="button" class="btn btn-outline-warning">Edit</button>
+                    <button onclick="deletePhoto()" type="button" class="btn btn-outline-secondary">Delete</button>
             </div>
+
+
 
         </div>
 
         <hr>
 
+
+    </div>
         <div class="row">
             <div class="col-md text-center">
-            <a href="index.php" class="btn btn-light">Go back</a>
+                <a href="index.php" class="btn btn-light">Go back</a>
             </div>
         </div>
 
     </div>
 
- 
+
     <?php include 'footer.php' ?>
 </body>
 

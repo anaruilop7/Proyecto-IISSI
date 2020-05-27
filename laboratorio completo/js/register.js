@@ -1,3 +1,8 @@
+
+
+const conjunto = new Set();
+
+
 function validateForm() {
     $("#errors-container").empty();
 
@@ -10,6 +15,20 @@ function validateForm() {
     let usuario = $("#usuario").val();
     let password1 = $("#password1").val();
     let password2 = $("#password2").val();
+
+
+    console.log(conjunto)
+
+    if (conjunto.has(email)){
+       
+          //  alert("Este email ya está registrado")
+          $("#errors-container").append(
+            getError("Este email ya está registrado. Por favor, elija uno nuevo o inicie sesión")
+        );
+        errorCounter++;
+        
+        
+    }
 
     if (nombre.trim().length < 3) {
         $("#errors-container").append(
@@ -104,3 +123,24 @@ $(document).ready(function () {
         }
     });
 });
+
+
+function loadEmails(){
+
+    $.ajax({
+        url: "http://localhost:3000/users",
+        success: createSet,
+        error: console.log("Ha ocurrido un error")
+    })
+}
+
+function createSet(data){
+
+    for(u of data){
+        conjunto.add(u.email)
+    }
+    console.log(conjunto)
+}
+
+
+$(loadEmails)

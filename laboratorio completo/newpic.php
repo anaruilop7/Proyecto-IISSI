@@ -53,6 +53,16 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-md text-center">
+                    <button onclick='esVisible("true")' type="button" class="btn btn-outline-warning">Public</button>
+                    <button onclick='esVisible("false")'' type="button" class="btn btn-outline-secondary">Private</button>
+
+                </div>
+
+            </div>
+            <hr>
             <div class="row">
                 <div class="col-md text-center">
                     <button type="submit" class="btn btn-warning">Submit</button>
