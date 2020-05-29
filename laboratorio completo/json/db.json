@@ -44,6 +44,24 @@
       "phone": "688888888",
       "user": "mario",
       "id": 5
+    },
+    {
+      "email": "lucia@mail.com",
+      "password": "$2a$10$mRcowFx6MIx2cvHpRNuAQue9opOdMF75iQZfdv7vsfqWMIeScsHEa",
+      "name": "Lucía",
+      "surname": "Jiménez",
+      "phone": "612345678",
+      "user": "lucia",
+      "id": 6
+    },
+    {
+      "email": "cris@mail.com",
+      "password": "$2a$10$/K7cG7NClQy3/E/TZzTnzOPtwkkuJWEPcgXeT6JzxC5CUsmxB04MG",
+      "name": "Cristina",
+      "surname": "Rodríguez",
+      "phone": "612345678",
+      "user": "cris",
+      "id": 7
     }
   ],
   "photos": [
@@ -274,7 +292,8 @@
       "title": "¡A comer!",
       "description": "Mi hora favorita del día",
       "tags": [
-        "food"
+        "food",
+        "sevilla"
       ],
       "date": "2020-05-26T11:31:57.633Z",
       "upvotes": 1,
@@ -311,6 +330,105 @@
       "visibilidad": "private",
       "userId": "3",
       "id": 21
+    },
+    {
+      "url": "https://data.whicdn.com/images/321166674/original.jpg",
+      "title": "Otro libro",
+      "description": "Me encantan...",
+      "tags": [
+        "books"
+      ],
+      "date": "2020-05-28T18:31:39.341Z",
+      "upvotes": 0,
+      "downvotes": 0,
+      "visibilidad": "public",
+      "userId": "6",
+      "id": 23
+    },
+    {
+      "url": "https://elcorreoweb.es/binrepository/eca-214-sevilla-y-ole_20245301_20190827130818.jpg",
+      "title": "La giralda",
+      "description": "Me encanta esta foto...",
+      "tags": [
+        "sevilla"
+      ],
+      "date": "2020-05-28T18:33:51.091Z",
+      "upvotes": 0,
+      "downvotes": 0,
+      "visibilidad": "private",
+      "userId": "7",
+      "id": 25
+    },
+    {
+      "url": "https://urbansevilla.es/wp-content/uploads/2019/09/rutas-sorprendentes-sevilla.jpg",
+      "title": "Ahora sí",
+      "description": "¡Esta sí se sube!",
+      "tags": [
+        "sevilla"
+      ],
+      "date": "2020-05-28T18:34:44.330Z",
+      "upvotes": 0,
+      "downvotes": 0,
+      "visibilidad": "public",
+      "userId": "7",
+      "id": 26
+    },
+    {
+      "url": "https://s3-eu-west-1.amazonaws.com/gr-cms/media/featured_images/1e42b360-8bd9-44ff-bc0f-f862203f88da.jpg",
+      "title": "Esta sí",
+      "description": "Ahora sí me deja!!",
+      "tags": [
+        "sevilla"
+      ],
+      "date": "2020-05-28T18:35:38.608Z",
+      "upvotes": 1,
+      "downvotes": 0,
+      "visibilidad": "public",
+      "userId": "7",
+      "id": 27
+    },
+    {
+      "url": "https://i.pinimg.com/originals/3b/ed/6b/3bed6bd6ad2d4d79dbdf18c6879839ac.jpg",
+      "title": "Mi cantante favorito",
+      "description": "Me encanta escucharle!!",
+      "tags": [
+        "music",
+        "pop"
+      ],
+      "date": "2020-05-28T18:37:34.006Z",
+      "upvotes": 0,
+      "downvotes": 0,
+      "visibilidad": "public",
+      "userId": "6",
+      "id": 28
+    },
+    {
+      "url": "https://images-na.ssl-images-amazon.com/images/I/51CQ0rLrubL._AC_SY400_.jpg",
+      "title": "Mirad lo que tengo...",
+      "description": "¡Todo para mí!",
+      "tags": [
+        "food"
+      ],
+      "date": "2020-05-28T18:41:14.975Z",
+      "upvotes": 0,
+      "downvotes": 0,
+      "visibilidad": "public",
+      "userId": "6",
+      "id": 29
+    },
+    {
+      "url": "https://www.realia.es/uploads/sizes/blog/blog/2019/comprar-piso-sevilla.jpg",
+      "title": "Las setas",
+      "description": "Ahora sí es privada",
+      "tags": [
+        "sevilla"
+      ],
+      "date": "2020-05-28T18:42:23.705Z",
+      "upvotes": 0,
+      "downvotes": 0,
+      "visibilidad": "private",
+      "userId": "6",
+      "id": 30
     }
   ],
   "palabrotas": {
@@ -354,6 +472,36 @@
       "userId": "2",
       "type": "upvote",
       "id": 5
+    },
+    {
+      "photoId": "20",
+      "userId": null,
+      "type": "upvote",
+      "id": 6
+    },
+    {
+      "photoId": "20",
+      "userId": null,
+      "type": "upvote",
+      "id": 7
+    },
+    {
+      "photoId": "22",
+      "userId": "7",
+      "type": "downvote",
+      "id": 8
+    },
+    {
+      "photoId": "22",
+      "userId": "6",
+      "type": "upvote",
+      "id": 9
+    },
+    {
+      "photoId": "27",
+      "userId": "6",
+      "type": "upvote",
+      "id": 10
     }
   ],
   "tags": [
@@ -386,6 +534,16 @@
       "url": "https://i.pinimg.com/originals/32/d5/95/32d5957384fb24fd05876b33e5605ce4.jpg",
       "title": "music",
       "id": 6
+    },
+    {
+      "url": "https://www.ambientum.com/wp-content/uploads/2019/07/naturaleza-sol-arboles-696x463.jpg",
+      "title": "naturaleza",
+      "id": 7
+    },
+    {
+      "url": "https://pm1.narvii.com/6859/9775bd00a5a669fb4f7b883b5a12ca9d8094e02av2_hq.jpg",
+      "title": "pop",
+      "id": 8
     }
   ],
   "comentarios": [
@@ -418,6 +576,24 @@
       "photoId": "20",
       "userId": "3",
       "id": 16
+    },
+    {
+      "text": "Uf, qué rico!!",
+      "photoId": "19",
+      "userId": "3",
+      "id": 17
+    },
+    {
+      "text": "Qué bueno!!!",
+      "photoId": "29",
+      "userId": "4",
+      "id": 18
+    },
+    {
+      "text": "No te voy a dar nada...",
+      "photoId": "29",
+      "userId": "6",
+      "id": 19
     }
   ]
 }

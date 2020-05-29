@@ -38,11 +38,17 @@ function deletePhoto2(data) {
 		}
 	}).then(function (response) {
 		if (response.ok) {
+			console.log("ok")
 			window.location.href = "usuario.php";
 		} else {
+			window.location.href = "usuario.php";
+
 			console.log("Error al borrar la foto: " + response.statusText);
+
 		}
 	}).catch(function (error) {
+		window.location.href = "usuario.php";
+
 		console.log("Error al borrar la foto: " + error);
 	});
 	} else{
@@ -50,6 +56,8 @@ function deletePhoto2(data) {
 		alert("You can't delete this photo!");
 		//$("#errors-container").append(getError("You can't delete this!"));
 	}
+
+
 }
 
 function processPhotoLoad(data) {
